@@ -1,0 +1,30 @@
+1.Login & Signup
+TODO: Change All colors of button
+TODO: Fix errors 
+TODO: Fix email and username login 
+TODO: Fix password strength 
+TODO: Fix loading spinners
+TODO: Add profile photo after Signup
+
+
+2. User Profile Page
+
+
+
+
+3. FeedScreen
+
+TODO
+
+Errors Handlings
+
+
+/// code --ERROR_USER_NOT_FOUND
+PlatformException(ERROR_USER_NOT_FOUND, There is no user record corresponding to this identifier. The user may have been deleted., null)
+
+/// code --ERROR_WRONG_PASSWORD
+PlatformException(ERROR_WRONG_PASSWORD, The password is invalid or the user does not have a password., null)
+
+/// code --ERROR_USER_DISABLED
+PlatformException(ERROR_USER_DISABLED, The user account has been disabled by an administrator., null)
+

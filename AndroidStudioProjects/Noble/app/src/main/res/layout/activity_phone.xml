@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:padding="16dp"
+                tools:context=".PhoneActivity">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Verify your mobile"
+                        android:textSize="22dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="25dp"
+                        android:textSize="16.5dp"
+                        android:text="We will send a text to verify your number. No fees will apply."/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <com.hbb20.CountryCodePicker
+                            android:id="@+id/ccp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/phone_input_background"
+                            android:gravity="center"
+                            android:hapticFeedbackEnabled="false"
+                            android:soundEffectsEnabled="false"
+                            app:ccp_arrowColor="#6D7177"
+                            app:ccp_arrowSize="15dp"
+                            app:ccp_autoDetectCountry="true"
+                            app:ccp_countryPreference="us,in"
+                            app:ccp_showNameCode="false"
+                            app:ccp_textSize="16dp" />
+
+                        <EditText
+                            android:id="@+id/phoneInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:padding="16dp"
+                            android:hint="Enter your number"
+                            android:textColorHint="#B7B7B7"
+                            android:textSize="18dp"
+                            android:background="@drawable/input_background"
+                            android:textStyle="bold"
+                            android:inputType="phone"
+                            android:singleLine="true" />
+                    </LinearLayout>
+                        <Button
+                            android:id="@+id/phoneLoginBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:text="Continue"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginVertical="26dp"
+                            android:background="@drawable/login_btn"
+                            android:textColor="@color/white"
+                            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

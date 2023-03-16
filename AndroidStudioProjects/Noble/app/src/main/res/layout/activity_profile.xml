@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_marginVertical="50dp"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/profileImg"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/user_profile" />
+
+            <ImageButton
+                    android:id="@+id/uploadNewProfileImg"
+                    android:layout_width="44dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_height="44dp"
+                    android:background="@drawable/upload_profile_img"
+                    android:src="@drawable/ic_camera" />
+
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Name"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_marginVertical="5dp"
+                android:labelFor="@+id/nameInput"/>
+
+            <EditText
+                android:id="@+id/nameInput"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="16dp"
+                android:hint="Rohan Sharma"
+                android:textColorHint="#B7B7B7"
+                android:textSize="18dp"
+                android:background="@drawable/user_input_background"
+                android:textStyle="bold"
+                android:inputType="textPersonName"
+                android:singleLine="true" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_marginVertical="5dp"
+                android:labelFor="@+id/usernameInput"/>
+
+            <EditText
+                android:id="@+id/usernameInput"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="16dp"
+                android:hint="\@rohan"
+                android:textColorHint="#B7B7B7"
+                android:textSize="18dp"
+                android:background="@drawable/user_input_background"
+                android:textStyle="bold"
+                android:inputType="text"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/userDetailsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Done"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginVertical="34dp"
+            android:background="@drawable/login_btn"
+            android:textColor="@color/white"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

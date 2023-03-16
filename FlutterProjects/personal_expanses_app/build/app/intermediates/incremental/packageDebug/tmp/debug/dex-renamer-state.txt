@@ -1,0 +1,4 @@
+#Tue Aug 13 05:37:04 IST 2019
+base.0=C\:\\Users\\ROHAN\\Projects\\FlutterProjects\\personal_expanses_app\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

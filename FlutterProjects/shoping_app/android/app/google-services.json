@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "356074862580",
+    "firebase_url": "https://bewakoof-demo.firebaseio.com",
+    "project_id": "bewakoof-demo",
+    "storage_bucket": "bewakoof-demo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:356074862580:android:8375a0944b73d2ee",
+        "android_client_info": {
+          "package_name": "com.example.shoping_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "356074862580-nkdtq9q0rukou49pdi5vbngvihui20os.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWrDNLHhb1E647JOXR8cOlVUD_3_v3L30"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "356074862580-nkdtq9q0rukou49pdi5vbngvihui20os.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

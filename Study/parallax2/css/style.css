@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 1.5rem;
+    flex-direction: row;
+    z-index: 100;
+}
+
+.navLogo{
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+}
+.logo{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.logoText{
+    color:#fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-left: 5px;
+}
+
+.menu{
+    background-color: #ffffff2e;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu span{
+    width: 18px;
+    height: 2px;
+    background-color: #fff;
+    color: #fff;
+    margin: 2px;
+}
+.one{
+    background: url("../img/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one::before{
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: block;
+    z-index: 1;
+    opacity: 0.45;
+}
+.one h1{
+    font-family: 'Lobster', cursive;
+    font-size: 7rem;
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+}
+.scrollDown{
+    background-color: #ffffff2e;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 3rem;
+    position: absolute;
+}
+.two{
+    background: url("../img/banner2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+}
+.two::before{
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: block;
+    z-index: 1;
+    opacity: 0.45;
+}
+.three{
+    background: url("../img/banner5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.three::before{
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: block;
+    z-index: 1;
+    opacity: 0.45;
+}
+.four{
+    background: url("../img/banner4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+}
+.four::before{
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: block;
+    z-index: 1;
+    opacity: 0.45;
+}
+.five{
+    background: url("../img/banner3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.five::before{
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: block;
+    z-index: 1;
+    opacity: 0.45;
+}

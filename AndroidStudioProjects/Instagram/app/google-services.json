@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "393955128879",
+    "firebase_url": "https://instagram-android-ae14a-default-rtdb.firebaseio.com",
+    "project_id": "instagram-android-ae14a",
+    "storage_bucket": "instagram-android-ae14a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393955128879:android:f2c4f3c0adc485f75fb8da",
+        "android_client_info": {
+          "package_name": "com.iamrohan.instagram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393955128879-p1f80cn14h2vvksulqdncai5bjdr3klf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCS09Vi5GuUJAH_bnZqfxyPOoKcmWQ5YWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "393955128879-p1f80cn14h2vvksulqdncai5bjdr3klf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

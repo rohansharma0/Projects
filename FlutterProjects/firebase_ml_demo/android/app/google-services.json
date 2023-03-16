@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "535438969691",
+    "firebase_url": "https://fir-ml-e09ec.firebaseio.com",
+    "project_id": "fir-ml-e09ec",
+    "storage_bucket": "fir-ml-e09ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535438969691:android:7afec07a06d96d96",
+        "android_client_info": {
+          "package_name": "com.example.firebase_ml_demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "535438969691-55q44evltn4720dpso4id15t98b4rqbd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEmo0Sec7e0MmJqltx1wmaWoVS_m5TeB8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "535438969691-55q44evltn4720dpso4id15t98b4rqbd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

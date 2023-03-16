@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "824329158465",
+    "project_id": "noble-dedc5",
+    "storage_bucket": "noble-dedc5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824329158465:android:80633c2aa984e50b1eebc0",
+        "android_client_info": {
+          "package_name": "com.iamrohan.noble"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "824329158465-m4b20iuufh2ustjh7k5in3b7a81obv4o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iamrohan.noble",
+            "certificate_hash": "19f0013baffc0cf9b7ae7d943e6b1b028e3d5405"
+          }
+        },
+        {
+          "client_id": "824329158465-ctij7jf52dj9knq62n07ekb0he4umqh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6G67AgaShJaRYBOP47SytQQPp3m0kE2U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "824329158465-ctij7jf52dj9knq62n07ekb0he4umqh9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

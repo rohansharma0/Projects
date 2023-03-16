@@ -1,0 +1,41 @@
+{
+  "project_info": {
+    "project_number": "222201170824",
+    "firebase_url": "https://bewakoof-d4c2f.firebaseio.com",
+    "project_id": "bewakoof-d4c2f",
+    "storage_bucket": "bewakoof-d4c2f.appspot.com"
+  },
+  "client": [{
+    "client_info": {
+      "mobilesdk_app_id": "1:222201170824:android:16091d5add7e521b",
+      "android_client_info": {
+        "package_name": "com.example.bewakoof"
+      }
+    },
+    "oauth_client": [{
+        "client_id": "222201170824-8s6pf1ruc6jcc9c3l0m3fn4u7h2ug5mr.apps.googleusercontent.com",
+        "client_type": 1,
+        "android_info": {
+          "package_name": "com.example.bewakoof",
+          "certificate_hash": "775bd99a1f905894635a808d9e296eb3e5275b3e"
+        }
+      },
+      {
+        "client_id": "222201170824-8nh65vp2rqe1s71nicq2ff7vlmbl8tmg.apps.googleusercontent.com",
+        "client_type": 3
+      }
+    ],
+    "api_key": [{
+      "current_key": "AIzaSyBo8LHSAyMX38H6EcpR4NeJhIomUf47-7c"
+    }],
+    "services": {
+      "appinvite_service": {
+        "other_platform_oauth_client": [{
+          "client_id": "222201170824-8nh65vp2rqe1s71nicq2ff7vlmbl8tmg.apps.googleusercontent.com",
+          "client_type": 3
+        }]
+      }
+    }
+  }],
+  "configuration_version": "1"
+}

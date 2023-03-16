@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "598211382812",
+    "project_id": "whatsapp-abf5b",
+    "storage_bucket": "whatsapp-abf5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598211382812:android:6b0a6496ff68d5be6ed9d9",
+        "android_client_info": {
+          "package_name": "com.iamrohan.whatsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "598211382812-ajff0qdq8rg9u8sa47rcpj1isvbthqhe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBf6ohDWN_tq-kMlxnJrwtx64gvar16K80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "598211382812-ajff0qdq8rg9u8sa47rcpj1isvbthqhe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
