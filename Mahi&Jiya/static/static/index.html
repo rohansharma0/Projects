@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahi and Jiya Interiors</title>
+    <link rel="shortcut icon" href="/images/logo.svg" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="logo__container">
+        <img src="images/logo.svg" alt="" />
+      </div>
+      <div class="nav__items" id="myNav">
+        <ul>
+          <li><a href="#" class="nav__links active">Home</a></li>
+          <li><a href="./products.html" class="nav__links">Products</a></li>
+          <li><a href="#" class="nav__links">About</a></li>
+          <li>
+            <a href="#contact" class="nav__links" id="gotoContact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu__container" onclick="toggleMenu()">
+        <div class="line" id="barOne"></div>
+        <div class="line" id="barTwo"></div>
+        <div class="line" id="barThree"></div>
+      </div>
+    </nav>
+    <!-- slider -->
+    <main class="slider__container">
+      <div class="slides">
+        <img src="/images/image1.png" alt="imageOne" />
+      </div>
+      <div class="slides">
+        <img src="/images/image2.png" alt="imageTwo" />
+      </div>
+      <div class="slides">
+        <img src="/images/image3.png" alt="imageThree" />
+      </div>
+      <div class="carousel__nav">
+        <span onclick="plusSlide(-1)" id="moveLeft" class="carousel__arrow">
+          <svg
+            class="carousel__icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"
+            ></path>
+          </svg>
+        </span>
+        <span onclick="plusSlide(1)" id="moveRight" class="carousel__arrow">
+          <svg
+            class="carousel__icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"
+            ></path>
+          </svg>
+        </span>
+      </div>
+    </main>
+    <div class="top__products__section">
+      <p class="top__products__title">top products</p>
+      <div class="gallary">
+        <div class="top__gallary">
+          <div class="top">
+            <img src="/images/item1.png" class="products__images" alt="item1" />
+            <div class="product__name">
+              <p>Sofa</p>
+            </div>
+          </div>
+          <div class="top">
+            <img src="/images/item2.png" class="products__images" alt="item2" />
+            <div class="product__name">
+              <p>Chair</p>
+            </div>
+          </div>
+        </div>
+        <div class="bottom__gallary">
+          <div class="top">
+            <img src="/images/item3.png" class="products__images" alt="item3" />
+            <div class="product__name">
+              <p>Walldraw</p>
+            </div>
+          </div>
+          <div class="top">
+            <img src="/images/item4.png" class="products__images" alt="item4" />
+            <div class="product__name">
+              <p>Bed</p>
+            </div>
+          </div>
+          <div class="top">
+            <img src="/images/item5.png" class="products__images" alt="item5" />
+            <div class="product__name">
+              <p>Dining Table</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="./products.html" class="show__button">show all</a>
+    </div>
+    <div class="contact__section" id="contact">
+      <div class="parallax">
+        <div class="parallax__image"></div>
+      </div>
+      <div class="contact__container">
+        <div class="contact__form">
+          <p>Get in<span>Touch</span></p>
+          <div class="form__container">
+            <div class="form__content">
+              <div class="input__container">
+                <label for="Name" class="input__label">Name</label>
+                <input type="text" id="Name" class="text__input" />
+              </div>
+              <div class="input__container">
+                <label for="Email" class="input__label">Email</label>
+                <input type="email" id="Email" class="text__input" />
+              </div>
+            </div>
+            <div class="form__content">
+              <div class="input__container">
+                <label for="Text" class="input__label">Message</label>
+                <textarea id="Text" class="message__input"></textarea>
+              </div>
+            </div>
+          </div>
+          <a href="" class="send__button">SEND</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="left__footer">
+        <h1>Mahi and Jiya Interiors</h1>
+        <h4>Deepak Sharma</h4>
+        <p>mahiandjiyainteriors@gmail.com</p>
+        <p>(+91) 0123456789</p>
+      </div>
+      <div class="center__footer">
+        <p>NO 41/2/2 BASAVANAPURA VILLAGE BANNERGHATTA MAIN ROAD</p>
+        <p>BANGALORE</p>
+        <p>Karnataka 560083</p>
+        <p>Copyright 2020 ©</p>
+      </div>
+      <div class="right__footer">
+        <p>STAY CONNECTED</p>
+        <div class="footer__logo__container">
+          <img src="./images/instagram.svg" alt="instagram" />
+          <img src="./images/twitter.svg" alt="twitter" />
+          <img src="./images/facebook.svg" alt="facebook" />
+          <img src="./images/linkedin.svg" alt="linkedin" />
+        </div>
+
+        <p>Created by ROHAN SHARMA</p>
+      </div>
+    </div>
+    <!-- scripts -->
+    <script src="/js/app.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyDGBMb7XBTtWhk2AEnYuMvQEwgAhkJ8TXQ",
+        authDomain: "mahi-and-jiya-interiors-demo.firebaseapp.com",
+        projectId: "mahi-and-jiya-interiors-demo",
+        storageBucket: "mahi-and-jiya-interiors-demo.appspot.com",
+        messagingSenderId: "654427904778",
+        appId: "1:654427904778:web:96696812cba522749378f3",
+        measurementId: "G-1TP696SZRD",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+  </body>
+</html>
