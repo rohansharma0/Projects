@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;0,700;1,400&family=Roboto:wght@300;400;500;700&display=swap");
+
+/* Scroll Bar */
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+    background: #213330;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #fbd561;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f9f4e8;
+    font-family: "Cormorant Garamond", serif;
+}
+
+/* main-section */
+
+main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+}
+.sidebg {
+    display: none;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background-color: #fbd561;
+    z-index: -1;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo p {
+    color: #213330;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.nav-logo p span {
+    font-size: 3rem;
+}
+
+.nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #213330;
+    height: 100vh;
+    flex-direction: column;
+    width: 0%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.close span {
+    width: 1.5rem;
+    height: 3px;
+    background-color: #f9f4e8;
+    display: block;
+}
+
+.close span:nth-child(1) {
+    transform: rotateZ(45deg);
+}
+.close span:nth-child(2) {
+    transform: rotateZ(-45deg);
+}
+.menu span {
+    width: 1.2rem;
+    height: 2px;
+    background-color: #213330;
+    margin: 4px 0;
+    display: block;
+}
+
+.nav-links a {
+    font-weight: 600;
+    color: #f9f4e8;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: flex-start;
+    position: relative;
+}
+
+.hero-headline p {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #213330;
+    width: 100%;
+    padding: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color: #213330;
+    width: 100%;
+    padding: 2rem 1rem;
+}
+.hero-btn {
+    width: 10rem;
+    height: 3rem;
+    background-color: #00715d;
+    color: #f9f4e8;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+.hero-social-links {
+    display: none;
+}
+.hero-social-links a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 3rem;
+    color: #213330;
+}
+
+.right-section {
+    flex: 1;
+    background-color: #d1d1d1;
+    display: flex;
+}
+
+.fund-info-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem 0 0 0;
+    background-color: #fbd561;
+    padding: 0.5rem 1.5rem;
+}
+.fund-info-text {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.fund-info-amount-text {
+    font-size: 2.5rem;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /* body {
+        background-color: blueviolet;
+    } */
+
+    main {
+        height: 130vh;
+    }
+    .navbar {
+        margin: 1rem 3rem;
+    }
+
+    .menu span {
+        width: 1.5rem;
+        height: 3px;
+    }
+
+    .hero-headline p {
+        font-size: 4.5rem;
+        padding: 1rem 3rem;
+    }
+    .hero-text p {
+        width: 80%;
+        padding: 2rem 3rem;
+    }
+
+    .hero-btn {
+        width: 10rem;
+        height: 4rem;
+        font-size: 1.4rem;
+        margin: 1rem 3rem 3rem 3rem;
+    }
+    .fund-info-container {
+        padding: 0.7rem 1.7rem;
+        right: 3rem;
+    }
+    .right-section {
+        margin: 0 3rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 850px) {
+    /* body {
+        background-color: chartreuse;
+    } */
+
+    main {
+        height: 170vh;
+    }
+
+    .navbar {
+        margin: 2rem 5rem;
+    }
+
+    .nav-logo p {
+        font-size: 3rem;
+    }
+    .nav-logo p span {
+        font-size: 4rem;
+    }
+    .menu {
+        display: none;
+    }
+    .nav-links {
+        display: block;
+        padding: 0;
+        position: initial;
+        height: auto;
+        background-color: initial;
+        width: auto;
+    }
+    .nav-links a {
+        font-weight: 600;
+        color: #213330;
+        margin-left: 3rem;
+    }
+    .nav-links .close {
+        display: none;
+    }
+
+    .left-section {
+        flex: 4;
+        margin: 0;
+    }
+
+    .hero-headline p {
+        font-size: 5rem;
+        font-weight: 600;
+        color: #213330;
+        width: 90%;
+        padding: 2rem 5rem;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+        padding: 2rem 5rem;
+    }
+    .hero-btn {
+        width: 12rem;
+        height: 4rem;
+        font-size: 1.8rem;
+        margin: 1rem 5rem 5rem 5rem;
+    }
+    .hero-social-links {
+        display: none;
+    }
+
+    .right-section {
+        flex: 5;
+        background-color: #d1d1d1;
+        margin: 0;
+    }
+
+    .fund-info-container {
+        padding: 1rem 2rem;
+        right: 0;
+    }
+    .fund-info-text {
+        font-size: 1.1rem;
+    }
+    .fund-info-amount-text {
+        font-size: 3rem;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /* body {
+        background-color: darkcyan;
+    } */
+
+    main {
+        height: 100vh;
+    }
+    .sidebg {
+        display: block;
+    }
+
+    .left-section {
+        justify-content: space-around;
+    }
+
+    .hero-wrapper {
+        flex-direction: row;
+    }
+
+    .hero-headline p {
+        width: 100%;
+        padding: 0 2rem 0 5rem;
+    }
+
+    .hero-text p {
+        width: 80%;
+        margin: 0;
+        padding: 0 2rem 0 5rem;
+    }
+    .hero-btn {
+        margin: 0 0 0 5rem;
+    }
+    .right-section {
+        margin-right: 5rem;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1560px) {
+    /* body {
+        background-color: black;
+    } */
+
+    /* main-section */
+
+    .left-section {
+        padding-bottom: 1rem;
+    }
+
+    .hero-headline p {
+        font-size: 6rem;
+        width: 95%;
+    }
+
+    .hero-text p {
+        width: 90%;
+    }
+
+    .hero-social-links {
+        display: block;
+        margin: 0 0 0 5rem;
+    }
+
+    /* story-section */
+
+    .story-container {
+        width: 100%;
+        height: 100vh;
+    }
+}

@@ -1,0 +1,33 @@
+<?php
+$username="";
+$usernameErr="";
+$password="";
+$passwordErr="";
+
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+	if(empty($_POST["username"])){
+		$usernameErr="username is required";
+	}
+	else{
+		$username=text_input($_POST["username"]);
+		if(!filter_var($username,FILTER_VALIDATE_EMAIL)){
+			$usernameErr="Invalid email formate";
+		}
+		}
+		
+		
+		if(empty($_POST["password"])){
+		$passwordErr="password is required";
+	}
+	else{
+		$password=text_input($_POST["password"]);
+		}
+}
+
+function text_input($data){
+	$data=trim($data);
+	$data=stripcslashes($data);
+	$data=htmlspecialchars($data);
+	return $data;
+}
+?>

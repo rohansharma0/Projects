@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    height: 5rem;
+    width: 100%;
+    background-color: #35363c;
+    position: fixed;
+}
+
+.div-2 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    height: 65vh;
+    margin: 0 15rem;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.title-1 {
+    grid-column: 1;
+    background-color: #35363c;
+    border-radius: 1rem 0 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.dis-1 {
+    grid-column: 2;
+    background-color: #35363c;
+    display: flex;
+    align-items: center;
+    padding-right: 5rem;
+}
+
+.title-2 {
+    grid-column: 2;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.dis-2 {
+    grid-column: 3 / span 3;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding-right: 5rem;
+}
+
+.title-3 {
+    grid-column: 6;
+    background-color: #424edc;
+    border-radius: 0 1rem 1rem 0;
+    display: flex;
+    align-items: center;
+}
+.dis-3 {
+    grid-column: 2;
+    background-color: #424edc;
+    border-radius: 0 1rem 1rem 0;
+    display: flex;
+    align-items: center;
+    padding-right: 5rem;
+}
+
+.title-1 p,
+.title-2 p,
+.title-3 p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    transform: rotate(180deg);
+    margin-left: 1.5rem;
+}
+
+.text-1 {
+    color: white;
+}
+.text-2 {
+    color: #424edc;
+}
+.text-3 {
+    color: white;
+}
+.dis-1,
+.dis-3 {
+    display: none;
+}

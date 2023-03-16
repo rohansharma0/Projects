@@ -1,0 +1,6 @@
+
+1 -> footer right text
+2 -> animations
+3 -> 3D elements 
+4 -> Navbar changes
+5 -> projects and work text

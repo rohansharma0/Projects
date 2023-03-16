@@ -1,0 +1,336 @@
+// imports
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800;900&display=swap");
+// variables
+
+$white: #fff;
+$black: #000;
+$bodyBackgroundColor: #faf9f9;
+$primaryColor: #774dee;
+$secondaryColor: #323232;
+
+// *
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $bodyBackgroundColor;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $primaryColor;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $secondaryColor;
+}
+// .background {
+// width: 100%;
+// height: 200vh;
+// background-image: url(https://images.pexels.com/photos/66284/winter-nature-season-trees-66284.jpeg?cs=srgb&dl=pexels-pixabay-66284.jpg&fm=jpg);
+// background-position: center;
+// background-attachment: fixed;
+// background-size: cover;
+// background-repeat: no-repeat;
+// position: absolute;
+// z-index: -10;
+// }
+//cursor
+
+.cursor {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    z-index: 2;
+}
+
+.main-wrapper {
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 25% 50% 25%;
+    width: 100%;
+    height: 100vh;
+}
+.logo-container {
+    grid-row: 1;
+    grid-column: 2 / span 1;
+    align-self: center;
+    .logo {
+        fill: $secondaryColor;
+        width: 120px;
+    }
+}
+.nav-links {
+    grid-row: 1;
+    grid-column: 3 / span 3;
+    align-self: center;
+
+    ul {
+        display: flex;
+        .nav-link {
+            list-style: none;
+            a {
+                font-size: 15px;
+                font-weight: 600;
+                text-decoration: none;
+                color: $secondaryColor;
+                text-transform: uppercase;
+                margin-right: 3rem;
+            }
+
+            .active {
+                color: $primaryColor;
+            }
+        }
+    }
+}
+.hero-section {
+    grid-row: 2;
+    grid-column: 2 / span 4;
+
+    .top-hero {
+        h2.line-inner {
+            font-size: 165px;
+            font-weight: 800;
+            color: $secondaryColor;
+            line-height: 92%;
+            margin-left: -9px;
+            position: relative;
+            overflow: hidden;
+            .hide-text {
+                display: inline-block;
+                span {
+                    font-size: 100px;
+                }
+            }
+        }
+    }
+
+    .middle-hero {
+        h2.line-inner {
+            font-size: 165px;
+            font-weight: 800;
+            color: $primaryColor;
+            line-height: 92%;
+            margin-left: -9px;
+            position: relative;
+            overflow: hidden;
+            .hide-text {
+                display: inline-block;
+            }
+        }
+    }
+    .bottom-hero {
+        margin: 1rem 0;
+        p {
+            font-size: 1.4rem;
+            font-weight: 200;
+            color: $secondaryColor;
+            line-height: 130%;
+        }
+    }
+}
+.menu-container {
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    display: inline-flex;
+    align-items: center;
+    width: 12vh;
+    justify-content: center;
+    .menu {
+        grid-row: 2;
+        grid-column: 1;
+        align-self: center;
+        justify-self: center;
+        margin: 0 auto 0 4rem;
+        cursor: pointer;
+        .menu-bar {
+            width: 27px;
+            height: 4px;
+            border-radius: 2px;
+            margin: 5px 0;
+            background-color: $secondaryColor;
+        }
+    }
+}
+
+.scroll-down {
+    grid-row: 3;
+    grid-column: 6;
+    align-self: end;
+    justify-self: center;
+    font-weight: 600;
+    color: $secondaryColor;
+    margin-bottom: 1.5rem;
+}
+.resume-btn {
+    grid-row: 3;
+    grid-column: 2;
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    width: 13rem;
+    height: 4rem;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #323232;
+    cursor: pointer;
+    background-color: $secondaryColor;
+}
+
+.resume-btn:hover {
+    color: #fff;
+    background-color: $primaryColor;
+    transition: 0.4s ease;
+}
+
+.work-section {
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    .top {
+        grid-column: 2;
+        grid-row: 1;
+        align-self: end;
+        display: flex;
+        align-items: center;
+        p {
+            color: $primaryColor;
+            font-size: 25px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+
+            .tag {
+                display: block;
+                width: 40px;
+                height: 4px;
+                background-color: $primaryColor;
+                margin-right: 1rem;
+            }
+        }
+    }
+    .line-inner3 {
+        position: relative;
+        overflow: hidden;
+    }
+    .middle {
+        grid-column: 2 / span 3;
+        grid-row: 2;
+        align-self: start;
+
+        p {
+            font-size: 2.7rem;
+            line-height: 130%;
+            font-weight: 600;
+            color: $secondaryColor;
+        }
+    }
+
+    .bottom {
+        grid-column: 2 / span 3;
+        grid-row: 3;
+        p {
+            font-size: 135px;
+            font-weight: 800;
+            line-height: 100%;
+            color: $primaryColor;
+        }
+    }
+}
+
+.project-section {
+    width: 100%;
+    height: 100vh;
+    background: $secondaryColor;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    .top {
+        grid-column: 2;
+        grid-row: 1;
+        align-self: end;
+        display: flex;
+        align-items: center;
+        p {
+            color: #fff;
+            font-size: 25px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            .tag {
+                display: block;
+                width: 40px;
+                height: 4px;
+                background-color: #fff;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+.menu-wrapper {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    background-color: $primaryColor;
+    // display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    .menu-links {
+        grid-row: 2;
+        grid-column: 2;
+        li {
+            list-style: none;
+            font-size: 6rem;
+            cursor: pointer;
+            font-weight: 700;
+            overflow: hidden;
+            position: relative;
+            text-transform: capitalize;
+            a {
+                color: #fff;
+                text-decoration: none;
+                &:hover {
+                    color: $secondaryColor;
+                }
+            }
+        }
+    }
+}

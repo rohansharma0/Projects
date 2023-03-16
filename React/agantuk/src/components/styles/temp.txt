@@ -1,0 +1,25 @@
+import styled from "styled-components";
+
+export const StyledHero = styled.div`
+   
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+       
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 850px) {
+       
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+       
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+
+    @media only screen and (min-width: 1560px) {
+    }
+`;
